@@ -4,7 +4,7 @@
 ### Map Area : Syracuse City Area, New York, USA 
 
 ### Introduction :
-I choose to analyse Syracuse City and area around it because it was fitting in the minimum dataset size requirement. The OSM file size is 61 MB in uncompressed form.Syracuse is the fourth most populous metropolitan city in the state of New York, U.S.A.
+I choose to analyse Syracuse City and area around it because it was fitting in the minimum dataset size requirement. The OSM file size is 61 MB in uncompressed form. Syracuse is the fourth most populous metropolitan city in the state of New York, U.S.A.
 It is the economic and educational hub of Central New York, a region with over a million inhabitants.
 
 ### Problems Encountered:
@@ -13,7 +13,7 @@ I kick started my analysis by exploring for the common errors in street names an
 
 #### 1.Abbreviations and typo error in street names:
 
-Abbreviations and typos were present in the street names like 'James St.' and 'Presidential Courts'.I corrected such data items by using a standard mapping dictionary that I created in the audit_street_name() codes.
+Abbreviations and typos were present in the street names like 'James St.' and 'Presidential Courts'. I corrected such data items by using a standard mapping dictionary that I created in the audit_street_name() codes.
 
 #### 2. Wrong format of the key & type fields in node_tags and way_tags:
 
@@ -274,7 +274,7 @@ The overall participation of users is skewed as shown by the top 10 contributing
 * The top 10 users contributed 93.52%.
 
 The above statistics makes me ponder of gamification as one of the reasons behind such contributions.Gamification is a service that gamifies the collection of data in OpenStreetMaps.It engages & motivates users to showcase their talents or desires by including rewards schemes like Badges and Points.In this way,gamification can used as a service to attract more contribution by users who contribute once or twice or not very often as they can use gamified check-ins when ever they go a new location.
-In this age when nearly all the social networking apps(like facebook and whatsapp)have location check-in feature, users can keep adding new location information easily through their smart phones and that data will be more accurate because of the GPS data capturing feature of the smart phone.
+In this age when nearly all the social networking apps (like facebook and whatsapp) have location check-in feature, users can keep adding new location information easily through their smart phones and that data will be more accurate because of the GPS data capturing feature of the smart phone.
 
 Although gamification rewards like points or badges can have a positive effect on user attitude towards submitting more data, but there are still doubts in its real efficacy.Like, it can be very effective for users' goal oriented and social behaviours but vanish in utilitarian services.So, we can say gamification can't drive long term behavorial change.It works but only to a certain degree.
 
