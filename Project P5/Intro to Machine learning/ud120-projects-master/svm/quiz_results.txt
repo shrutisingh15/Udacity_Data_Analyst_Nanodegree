@@ -1,0 +1,185 @@
+Python nb_author_id.py
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+training time : 1.746 s
+prediction time : 0.452 s
+********************************************************
+
+## On original training dataset and linear kernel
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 496.196 s
+time to predict : 37.224 s
+Accuracy Score : 0.984072810011
+********************************************************
+
+## On smaller training dataset and linear kernel
+## features_train=features_train[:len(features_train)/100]
+## labels_train=labels_train[:len(labels_train)/100]
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 0.286 s
+time to predict : 3.319 s
+Accuracy Score : 0.884527872582
+
+## So, better training and prediction times on smaller dataset , but accuracy went low.
+***************************************************************************************
+
+## On smaller training dataset and rbf kernel
+## features_train=features_train[:len(features_train)/100]
+## labels_train=labels_train[:len(labels_train)/100]
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 0.278 s
+time to predict : 2.84 s
+Accuracy Score : 0.616040955631
+
+## So, rbf kernel lowered the accuracy on the smaller dataset as well.
+*****************************************************************************************
+## On smaller training dataset and rbf kernel and C=10.0
+## features_train=features_train[:len(features_train)/100]
+## labels_train=labels_train[:len(labels_train)/100]
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 0.23 s
+time to predict : 3.064 s
+Accuracy Score : 0.616040955631
+
+*****************************************************************************************
+
+## On smaller training dataset and rbf kernel and C=100.0
+## features_train=features_train[:len(features_train)/100]
+## labels_train=labels_train[:len(labels_train)/100]
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 0.362 s
+time to predict : 3.589 s
+Accuracy Score : 0.616040955631
+
+***************************************************************************************
+
+## On smaller training dataset and rbf kernel and C=1000.0
+## features_train=features_train[:len(features_train)/100]
+## labels_train=labels_train[:len(labels_train)/100]
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 0.412 s
+time to predict : 5.061 s
+Accuracy Score : 0.821387940842
+****************************************************************************************
+
+## On smaller training dataset and rbf kernel and C=10000.0
+## features_train=features_train[:len(features_train)/100]
+## labels_train=labels_train[:len(labels_train)/100]
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 0.412 s
+time to predict : 3.979 s
+Accuracy Score : 0.892491467577
+
+so, C=10000 gave the best accuracy with rbf kernel and smaller dataset.
+****************************************************************************************
+
+## On Original full training dataset and rbf kernel and C=10000.0
+
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 266.545 s
+time to predict : 23.567 s
+Accuracy Score : 0.990898748578
+
+so, c=10000 gave the best accuracy on full dataset with rbf kernel
+****************************************************************************************
+## On smaller 1% of the dataset , and rbf kernel and C=10000.0 
+
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 0.377 s
+time to predict : 3.479 s
+Accuracy Score : 0.892491467577
+10th : 1, 26th : 0, 50th : 1
+
+*****************************************************************************************
+
+## On original dataset , rbf kernel and C=10000
+
+Python svm_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 210.422 s
+time to predict : 22.489 s
+Accuracy Score : 0.990898748578
+
+No. of emails written by Chris : 877
+
+*******************************************************************************************
+
+## On orginal dataset
+
+Python dt_author_id.py
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+time to train : 279.623 s
+time to predict : 0.26 s
+Accuracy Score : 0.976678043231
+
+*****************************************************************************************
+## On orginal dataset
+
+Python dt_author_id.py
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+no. of features in the data : 3785
+
+*****************************************************************************************
+
+## On orginal dataset and selector = SelectPercentile(f_classif, percentile=1) in email_preprocess.py file
+
+Python dt_author_id.py
+
+no. of Chris training emails : 7936
+no. of Sara training emails : 7884
+no. of features in the data : 379
+time to train : 10.644 s
+time to predict : 0.007 s
+Accuracy Score : 0.967007963595
+*********************************************************************************
+
+## On original dataset
+## Random Forest
+Python random_forest.py 
+
+Time to train : 0.095 s
+Time to predict : 0.014 s
+Accuracy Score : 0.92
+
+## AdaBoost
+Python ada_boost.py
+Time to train : 0.346 s
+Time to predict : 0.044 s
+Accurac Score : 0.924
+
+## knn
+Python knn.py
+Time to train : 0.013 s
+Time to predict : 0.015 s
+Accurac Score : 0.92
