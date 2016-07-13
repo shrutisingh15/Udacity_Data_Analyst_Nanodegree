@@ -1,0 +1,10 @@
+1. Udacity Into to machine learning lessons
+2.http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html
+3.https://www.reddit.com/r/MachineLearning/comments/29uwi1/why_are_extremely_randomized_trees_more_efficient/
+4.https://en.wikipedia.org/wiki/Precision_and_recall
+5.http://www.montefiore.ulg.ac.be/~ernst/uploads/news/id63/extremely-randomized-trees.pdf
+6.http://scikit-learn.org/stable/modules/generated/sklearn.tree.ExtraTreeClassifier.html
+7.http://scikit-learn.org/stable/modules/generated/sklearn.grid_search.GridSearchCV.html
+8.Documentary on Enron: The Smartest guy in the room on netflix
+9.https://github.com/udacity/ud120-projects.git
+
